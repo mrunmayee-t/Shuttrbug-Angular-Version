@@ -1,0 +1,31 @@
+<div fxFlex="100" fxLayout="row" fxLayoutAlign="start stretch">
+  <mat-toolbar color="primary" class="topbar telative">
+    <div fxFlex="100" fxLayout="row" fxLayoutAlign="start strecth">
+      <div fxFlex="20" fxLayout="row" fxFlexAlign="start center">
+        <img alt="logo">
+      </div>
+      <div fxFlex="60" fxLayout="row" fxFlexAlign="start center">
+        <span class="title-medium title-position">I'm photographer</span>
+      </div>
+    </div>
+    <div fxFlex="20" fxLayout="row" fxFlexAlign="end stretch">
+      <!--Navbar-->
+      <!-- <div id="nav-icon3" fxFlex="10" style="margin-right: 5%;" fxLAyout="row" fxFlexAlign="end stretch"
+      (click)="btnToggle($event)" [ngClass]="{'open': itemToggle}" [matMenuTriggerFor]="menuRef">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div> -->
+      <div fxFlex="10" style="margin-left: 90%;" fxLAyout="row" fxFlexAlign="end stretch" (click)="btnToggle($event)"
+        [ngClass]="{'open': itemToggle}" [matMenuTriggerFor]="menuRef">
+        <app-burger-menu></app-burger-menu>
+      </div>
+      <div fxFlex="10" fxLayout="row" fxFlexAlign="end stretch">
+        <mat-menu #menuRef="matMenu" class="menu-container" [overlapTrigger]="false">
+          <app-sidemenu></app-sidemenu>
+        </mat-menu>
+      </div>
+    </div>
+  </mat-toolbar>
+</div>
