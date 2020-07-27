@@ -7,11 +7,13 @@ import { FullComponent } from './core/layouts/full/full.component';
 import { CoreModule } from './core/modules/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidemenuComponent } from './core/common/sidemenu/sidemenu.component';
-import { BurgerMenuComponent } from './core/common/burger-menu/burger-menu.component';
+import { AnimationsDirective } from './main/directives/animations.directive';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AnimationsDirective
   ],
   imports: [
     BrowserModule,

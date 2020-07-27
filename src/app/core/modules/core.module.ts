@@ -9,26 +9,30 @@ import { FooterComponent } from '../layouts/full/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { SidemenuComponent } from '../common/sidemenu/sidemenu.component';
 import { BurgerMenuComponent } from '../common/burger-menu/burger-menu.component';
-import { NgbdCarouselNavigationModule } from '../common/carousel-navigation/carousel-navigation.module';
+import { CarouselNavigationComponent } from '../common/carousel-navigation/carousel-navigation.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 const CORE_COMPONENTS = [
   FullComponent,
   HeaderComponent,
   FooterComponent,
   SidemenuComponent,
-  BurgerMenuComponent
+  BurgerMenuComponent,
+  CarouselNavigationComponent
 
 ]
 
 @NgModule({
   declarations: [...CORE_COMPONENTS],
-  exports: [...CORE_COMPONENTS, RouterModule, MaterialModule, FlexLayoutModule, FormsModule, NgbdCarouselNavigationModule],
+  exports: [...CORE_COMPONENTS, RouterModule, MaterialModule, FlexLayoutModule, FormsModule, NgbModule],
   imports: [
     RouterModule,
     CommonModule,
     MaterialModule,
     FlexLayoutModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   entryComponents: [...CORE_COMPONENTS],
   providers: []
