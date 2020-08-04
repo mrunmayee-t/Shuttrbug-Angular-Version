@@ -1,23 +1,39 @@
 <div fxFlex="100" fxLayout="row" fxLayoutAlign="start stretch">
   <mat-toolbar color="primary" class="topbar telative">
     <div fxFlex="100" fxLayout="row" fxLayoutAlign="start strecth">
-      <div fxFlex="20" fxLayout="row" fxFlexAlign="start center">
-        <img alt="logo">
-      </div>
       <div fxFlex="60" fxLayout="row" fxFlexAlign="start center">
-        <span class="title-medium title-position">I'm photographer</span>
+        <img class="header-logo" alt="logo" src="../../../../../assets/logos/shuttrbug.png">
       </div>
-    </div>
-    <div fxFlex="20" fxLayout="row" fxFlexAlign="end stretch">
-      <!--Navbar-->
-      <!-- <div id="nav-icon3" fxFlex="10" style="margin-right: 5%;" fxLAyout="row" fxFlexAlign="end stretch"
+
+      <div fxFlex="40" fxLayout="row" fxFlexAlign="end stretch">
+        <mat-toolbar-row id="matMenus" style="margin-top: 0%;">
+          <button class="header-menu-item" [routerLink]="'/home'" [routerLinkActive]="['active']"
+            [routerLinkActiveOptions]="{exact: true}">
+            Home
+          </button>
+          <button class="header-menu-item" [routerLink]="'/application'" [routerLinkActive]="['active']"
+            [routerLinkActiveOptions]="{exact: false}">
+            Gallery
+          </button>
+          <button class="header-menu-item" [routerLink]="'/vehicles'" [routerLinkActive]="['active']"
+            [routerLinkActiveOptions]="{exact: false}">
+            Our Categories
+          </button>
+          <button class="header-menu-item" [routerLink]="'/vehicles'" [routerLinkActive]="['active']"
+            [routerLinkActiveOptions]="{exact: false}">
+            contact Us
+          </button>
+        </mat-toolbar-row>
+
+        <!--Navbar-->
+        <!-- <div id="nav-icon3" fxFlex="10" style="margin-right: 5%;" fxLAyout="row" fxFlexAlign="end stretch"
       (click)="btnToggle($event)" [ngClass]="{'open': itemToggle}" [matMenuTriggerFor]="menuRef">
       <span></span>
       <span></span>
       <span></span>
       <span></span>
     </div> -->
-      <div fxFlex="10" style="margin-left: 90%;" fxLAyout="row" fxFlexAlign="end stretch" (click)="btnToggle($event)"
+        <!-- <div fxFlex="10" style="margin-left: 90%;" fxLAyout="row" fxFlexAlign="end stretch" (click)="btnToggle($event)"
         [ngClass]="{'open': itemToggle}" [matMenuTriggerFor]="menuRef">
         <app-burger-menu></app-burger-menu>
       </div>
@@ -25,6 +41,7 @@
         <mat-menu #menuRef="matMenu" class="menu-container" [overlapTrigger]="false">
           <app-sidemenu></app-sidemenu>
         </mat-menu>
+      </div> -->
       </div>
     </div>
   </mat-toolbar>

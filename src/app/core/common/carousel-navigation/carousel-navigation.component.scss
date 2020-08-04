@@ -1,14 +1,32 @@
-@keyframes slideInFromTop {
-  0% {
-    transform: translateY(-100%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
+.circle {
+  position: relative;
+  width: 30%;
+  height: 600px;
+  // Animate all properties during 1 second with 
+  // ease flow and 0.5 seconds of delay
+  // [property] [duration] [ease] [delay]
+  transition: all 1s ease 500ms;
+  /* 
+   Try to coment the transition property to see the animation
+   dissapear 
+  */
 }
 
-.carousel-item {
-  animation: 1s linear 0s 1 slideInFromTop;
+.circle:hover {
+  // Move the circle 200px right (X) & 200px down (Y)
+  // Double its size and rotate it 180 degrees.  
+  transform: translate(200px, 200px) scale(2) rotate(0deg);
+  // opacity: 0.5;
+  // * For performance reasons, limit the animations to the
+  // transform and opacity properties.
 
 }
+
+// .circle p {
+//   position: absolute;
+//   margin: 0;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+
+// }
