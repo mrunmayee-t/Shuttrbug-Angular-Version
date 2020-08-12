@@ -6,6 +6,7 @@
   overflow: hidden !important;
 }
 
+
 .menu-container {
   float: right;
 }
@@ -18,19 +19,22 @@
 .header-menu-item {
   border: none;
   background: white;
-  padding: 20px;
-  font-size: 14px;
-  color: #4b5d67;
+  padding: 30px;
+  font-size: 18px;
+  margin-top: 10%;
+  font-weight: 500;
+  color: #ffa36c;
 }
 
 .header-logo {
   height: auto;
   padding: 20px;
-  width: 20%;
-  margin-top: 5%;
+  width: 24%;
+  margin-top: 7%;
 }
 
 
 #matMenus {
   height: 150px;
+  margin-left: 13%;
 }

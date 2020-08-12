@@ -8,6 +8,8 @@ import { CoreModule } from './core/modules/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidemenuComponent } from './core/common/sidemenu/sidemenu.component';
 import { AnimationsDirective } from './main/directives/animations.directive';
+import { AboutUsComponent } from './core/layouts/about-us/about-us.component';
+
 
 
 @NgModule({

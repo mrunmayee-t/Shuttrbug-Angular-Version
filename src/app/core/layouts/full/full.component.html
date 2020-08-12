@@ -1,10 +1,19 @@
 <div class="main-container">
-  <div fxFlex="100" fxLayout="column" fxLayoutAlign="start stretch">
-    <app-header></app-header>
+  <div fxFlex="100" fxLayout="column" fxLayoutAlign="start stretch" class="main-header-container" appScollprogress>
+    <app-header style="height: 113px"></app-header>
+    <div class="progress-container">
+      <div class="progress-bar" id="scrollBar"></div>
+    </div>
   </div>
 
-  <div fxFlex="100" fxLayout="row wrap" fxLayoutAlign="start stretch" class="grid">
+
+  <div fxFlex="100" fxLayout="row wrap" fxLayoutAlign="start stretch">
     <app-carousel-navigation class="banner-image"></app-carousel-navigation>
   </div>
-
+  <div fxFlex="100" fxLayout="row wrap" fxLayoutAlign="start stretch">
+    <app-about-us></app-about-us>
+  </div>
+  <div fxFlex="100" fxLayout="row wrap" fxLayoutAlign="start stretch" class="howitwokrs-main-div">
+    <app-how-it-works style="width: 100%;"></app-how-it-works>
+  </div>
 </div>

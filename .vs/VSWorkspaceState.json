@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\core",
+    "\\src\\app\\core\\common",
+    "\\src\\app\\core\\common\\carousel-navigation",
+    "\\src\\app\\core\\layouts",
+    "\\src\\app\\core\\layouts\\full"
+  ],
+  "SelectedNode": "\\src\\app\\core\\common\\carousel-navigation\\carousel-navigation.component.scss",
+  "PreviewInSolutionExplorer": false
+}

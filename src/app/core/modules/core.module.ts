@@ -11,7 +11,9 @@ import { SidemenuComponent } from '../common/sidemenu/sidemenu.component';
 import { BurgerMenuComponent } from '../common/burger-menu/burger-menu.component';
 import { CarouselNavigationComponent } from '../common/carousel-navigation/carousel-navigation.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { AboutUsComponent } from '../layouts/about-us/about-us.component';
+import { ScollprogressDirective } from '../../main/directives/scollprogress.directive';
+import { HowItWorksComponent } from '../layouts/how-it-works/how-it-works.component';
 
 const CORE_COMPONENTS = [
   FullComponent,
@@ -19,12 +21,14 @@ const CORE_COMPONENTS = [
   FooterComponent,
   SidemenuComponent,
   BurgerMenuComponent,
-  CarouselNavigationComponent
+  CarouselNavigationComponent,
+  AboutUsComponent,
+  HowItWorksComponent
 
 ]
 
 @NgModule({
-  declarations: [...CORE_COMPONENTS],
+  declarations: [...CORE_COMPONENTS, ScollprogressDirective],
   exports: [...CORE_COMPONENTS, RouterModule, MaterialModule, FlexLayoutModule, FormsModule, NgbModule],
   imports: [
     RouterModule,
