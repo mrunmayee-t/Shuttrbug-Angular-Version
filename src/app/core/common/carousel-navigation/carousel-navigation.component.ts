@@ -46,19 +46,19 @@ export class CarouselNavigationComponent implements OnInit {
     },
     {
       id: 8,
-      src: "../../../../assets/images/banner_8.jpg"
+      src: "../../../../assets/images/banner_8.jpeg"
     },
     {
       id: 9,
-      src: "../../../../assets/images/banner_9.jpg"
+      src: "../../../../assets/images/banner_9.jpeg"
     },
     {
       id: 10,
-      src: "../../../../assets/images/banner_10.jpg"
+      src: "../../../../assets/images/banner_10.jpeg"
     },
     {
       id: 11,
-      src: "../../../../assets/images/banner_11.jpg"
+      src: "../../../../assets/images/banner_11.jpeg"
     }];
   }
 
